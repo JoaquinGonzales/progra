@@ -7,7 +7,11 @@
  */
 public class Task
 {
-    private String description = "";
+    private String description;
+    public Task()
+    {
+        description = "";
+    }
    public String getDescription()
    {
        return description;

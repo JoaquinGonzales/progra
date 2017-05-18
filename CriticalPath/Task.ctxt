@@ -2,7 +2,9 @@
 comment0.target=Task
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ Task\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
-comment1.target=java.lang.String\ getDescription()
-comment2.params=desc
-comment2.target=void\ setDescription(java.lang.String)
-numComments=3
+comment1.target=Task()
+comment2.params=
+comment2.target=java.lang.String\ getDescription()
+comment3.params=desc
+comment3.target=void\ setDescription(java.lang.String)
+numComments=4
