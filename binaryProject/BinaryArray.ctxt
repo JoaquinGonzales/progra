@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=BinaryArray
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ BinaryArray\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=n
+comment1.target=int[]\ toBinaryArray(int)
+comment2.params=n
+comment2.target=int\ arrayLength(int)
+comment3.params=array
+comment3.target=void\ swapExtremeBits(int[])
+comment4.params=n
+comment4.target=int[]\ toBinaryArrayEx(int)
+comment5.params=n
+comment5.target=int\ calculateBinaryArraySize(int)
+comment6.params=array
+comment6.target=int\ convertToDecimal(int[])
+numComments=7

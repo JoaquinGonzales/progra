@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=ArrayLengthTest
+comment0.text=\r\n\ The\ test\ class\ ArrayLengthTest.\r\n\r\n\ @author\ \ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=void\ arrayLengthOfZeroIsOne()
+comment2.params=
+comment2.target=void\ arrayLengthOfOneIsOne()
+comment3.params=
+comment3.target=void\ arrayLengthOfTwoIsTwo()
+comment4.params=
+comment4.target=void\ arrayLengthOfFiveIsThree()
+comment5.params=
+comment5.target=void\ arrayLengthOfEightIsFour()
+comment6.params=
+comment6.target=void\ arrayLengthOfFifteenIsFour()
+numComments=7

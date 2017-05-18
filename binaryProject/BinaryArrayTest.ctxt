@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=BinaryArrayTest
+comment0.text=\r\n\ The\ test\ class\ binaryArrayTest.\r\n\r\n\ @author\ \ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=void\ binaryOfZeroIsZero()
+comment2.params=
+comment2.target=void\ binaryOfTwoIsOneZero()
+comment3.params=
+comment3.target=void\ binaryOfSevenIsOneOneOne()
+comment4.params=
+comment4.target=void\ binaryOf230Is_1_1_1_0_0_1_1_0()
+comment5.params=
+comment5.target=void\ swapExtremesOfAnArrayWithOnlyTwoElements()
+comment6.params=
+comment6.target=void\ swapExtremesOfArrayWithThreeElements100()
+comment7.params=
+comment7.target=void\ convertBinaryToDecimal()
+comment8.params=
+comment8.target=void\ convertToBinaryToDecimalANumberLarge()
+comment9.params=
+comment9.target=void\ convertBinaryArray()
+numComments=10
