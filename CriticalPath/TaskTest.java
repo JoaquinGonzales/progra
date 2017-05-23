@@ -35,4 +35,49 @@ public class TaskTest
         
         assertEquals("TEST",task.getDescription());
     }
+     @Test
+    public void readNameProperty()
+    {
+        Task emptyTask = new Task();
+        
+        assertEquals("",emptyTask.getName());
+    }
+    @Test
+    public void writeName()
+    {
+         Task task = new Task();
+         task.setName("TEST");
+        
+        assertEquals("TEST",task.getName());
+    }
+    @Test
+    public void readOwnerProperty()
+    {
+        Task emptyTask = new Task();
+        
+        assertEquals("",emptyTask.getOwner());
+    }
+    @Test
+    public void writeOwner()
+    {
+         Task task = new Task();
+         task.setOwner("TEST");
+        
+        assertEquals("TEST",task.getOwner());
+    }
+    @Test
+    public void readTimeToCompleteProperty()
+    {
+        Task emptyTask = new Task();
+        
+        assertEquals(0,emptyTask.getTimeToComplete());
+    }
+    @Test
+    public void writeTimeToComplete()
+    {
+         Task task = new Task();
+         task.setTimeToComplete(1);
+        
+        assertEquals(1,task.getTimeToComplete());
+    }
 }
