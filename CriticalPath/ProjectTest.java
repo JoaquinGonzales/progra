@@ -4,6 +4,8 @@ import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import java.util.List;
+import java.util.Vector;
 
 /**
  * The test class ProjectTest.
@@ -13,6 +15,13 @@ import org.junit.Test;
  */
 public class ProjectTest
 {
+    Project project1;
+    @Before
+    public void setup()
+    {
+        project1= new Project("Project");
+    }
+    
    @Test
    public void testProject()
    {
@@ -138,6 +147,56 @@ public class ProjectTest
        assertEquals(12, project.calculateMaxTimeToComplete());  
        secondTask.setTimeToComplete(10);
        assertEquals(16, project.calculateMaxTimeToComplete());  
+    }
+    @Test
+    public void projectCannotDuplicateTasks()
+    {
+        Project project = new Project("sample");
+        Task firstTask = new Task("t1",5);
+        
+        project.addTask(firstTask);
+        project.addTask(new Task("t1",5));
+        assertEquals(1, project.countTasks());  
+    }
+    @Test
+    public void projectWithMoreThanOnePath()
+    {
+       Project project = new Project("sample");
+       Task firstTask = new Task("t1",1);
+       Task secondTask = new Task("t2",5);
+       Task thirdTask = new Task("t3",3);
+       Task fourthTask = new Task("t4",2); 
+       Task task5 = new Task("t5",3); 
+       Task task6 = new Task("t6",4); 
+       Task task7 = new Task("t7",3);
        
+       task6.setDependency(fourthTask);
+       task6.setDependency(task5);
+       fourthTask.setDependency(secondTask);
+       secondTask.setDependency(firstTask);
+       task5.setDependency(thirdTask);
+       thirdTask.setDependency(firstTask);
+       task7.setDependency(task6);
+       
+        project.addTask(firstTask);
+        project.addTask(secondTask);
+        project.addTask(thirdTask);
+        project.addTask(fourthTask);
+        project.addTask(task5);
+        project.addTask(task6);
+        project.addTask(task7);       
+        
+       assertEquals(15, project.calculateMaxTimeToComplete());  
+      // //List<Task> criticalPath = project.calculateCriticalPath();
+       //assert
+    }
+    @Test
+    public void calculateCritialPath()
+    {
+        Task task = new Task("t1",4);
+        project1.addTask(task);
+        List<Task> expected = new Vector<Task>();
+        expected.add(task);
+        assertEquals(expected,project1.calculateCriticalPath());
     }
 }

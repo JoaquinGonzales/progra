@@ -93,5 +93,18 @@ public class Task
         } 
         return max;
     }
+    @Override
+    public boolean equals(Object otherObject)
+    {
+        Task otherTask = (Task) otherObject;
+        return this.name.equals(otherTask.name)&&
+               this.timeToComplete==otherTask.timeToComplete;
+    }
+    @Override
+    public int hashCode()
+    {
+        return name.hashCode() + 53*timeToComplete;
+    }
+    
 }
 
